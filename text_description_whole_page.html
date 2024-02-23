@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #49bae7;
+            background-image: url("football.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container {
+            margin-top: 50px;
+            background-color: #cbe2f1; 
+            padding: 20px; 
+            border-radius: 10px; 
+            width: 60%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            margin-left: 270px;
+        }
+        .box {
+            width: 100%; 
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #000000;
+            box-sizing: border-box;
+        }
+        .image-box.reverse {
+            flex-direction: row-reverse; 
+        }
+        
+        .box:nth-child(1) .image-box {
+            margin-right: 10px;
+        }
+        
+        .box:nth-child(2) .image-box {
+            margin-left: 10px;
+        }
+        .image-box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .image {
+            width: 100%;
+            max-width: 100%; 
+            height: 400px; 
+            width: 400px;
+            margin-bottom: 10px;
+        }
+        .description-box {
+            background-color: #ebf2f4;
+            padding: 10px;
+            border: 1px solid #333;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .about-box {
+            background-color: #ebf2f4;
+            padding: 10px;
+            border: 1px solid #333;
+            text-align: left;
+            width:300px;
+        }
+
+        .container1{
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="image-box">
+                <div class="container1">
+                    <img src="messi.jpg" alt="Image 1" class="image">
+                    <div class="description-box">
+                        <p>Lionel Messi is an Argentine professional soccer player</p>
+                    </div>
+                </div>
+                <div class="about-box">
+                    <h3>About</h3>
+                    <p>Lionel Messi, an Argentine professional footballer, is widely acclaimed for his exceptional skill, vision, and prolific goal-scoring ability. He is recognized as one of the greatest footballers of all time, having won numerous awards and titles throughout his illustrious career, including multiple FIFA Ballon d'Or honors.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-box reverse">
+                <div class="container1">
+                    <img src="ronaldo.jpg" alt="Image 2" class="image">
+                    <div class="description-box">
+                        <h3></h3>
+                        <p>Cristiano Ronaldo is a Portuguese professional soccer player</p>
+                    </div>
+                </div>
+                <div class="about-box">
+                    <h3>About</h3>
+                    <p>Cristiano Ronaldo, a Portuguese professional footballer, is renowned for his exceptional athleticism, goal-scoring prowess, and versatility on the field. He is widely regarded as one of the greatest footballers in history, having won numerous awards and titles, including multiple FIFA Ballon d'Or awards. Ronaldo's remarkable career spans successful stints with top clubs in Europe and significant contributions to his national team, Portugal.</p>
+                </div>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
